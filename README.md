@@ -1,11 +1,10 @@
 
 # EEMP Digital Design Lab
 <img src="assets/images/DigitalDesignLabHeader.png" style="margin-top: 0">
+<p style="text-align:center;">Welcome to the EEMP Digital Design Laboratory!</p>
 
 # Background
 All the electronics around you can be decomposed to binary, ones and zeros. For example, the very device that you are using to look at this page is being translated to ones and zeros for your display to show. 
-
-In this lab, you will look at various signals and get a feel of how looking at signals can allow you to get a "feel" about how computers work. 
 
 Examples: 
 - Controllers
@@ -13,6 +12,8 @@ Examples:
 - PWM Signals for controlling servos
 - Communication
 - Computer Architecture 
+
+In this lab, you will look at various signals and get a feel of how looking at signals can allow you to get a "feel" about how computers work. 
 
 
 ## Signals
@@ -25,7 +26,9 @@ Square waves can be generated through various means such as natural crystals, an
 
 ## Combinational Logic
 ![Combinational Logic](assets/images/combinational_logic.png)
+(Figure x. Combinational Logic)
 ![Combinational Logic Truth Table](assets/images/truth_tables.png)
+(Figure x. Combinational Logic Truth Table)
 
 Recall from the lecture about logic gates where AND, OR, NOT, XOR gates allow you to make calculations and decisions. 
 Combinational Logic is a type of signal where the output only depends on the current input values. 
@@ -33,13 +36,41 @@ Combinational Logic is a type of signal where the output only depends on the cur
 
 ## Sequential Logic 
 ![Sequential Logic](assets/images/sequential_logic.png)
+(Figure x. Sequential Logic)
 Sequential Logic is a type of signal where the output depends on both the current value and the sequence of past inputs. 
 Sequential Logic allow signals to have memory about past decisions. One example is having a counter that counts upwards or downwards. 
 
-## 
+## Binary<->Hexadecimal<->ASCII Conversion
+In the context of digital design, binary is the most fundamental unit but often times converting to other units allow you to look at information more easily. 
+Converting binary to hexadecimal allows you to reduce the number of visible digits there are. Then converting hexadecimal to ASCII is as easy as looking at the **two** hexadecimal values. 
+
+Binary to Hexadecimal Table:
+| Binary | Hexadecimal | 
+| ------ | ----------- |
+| 0000   |      0      |
+| 0001   |      1      |
+| 0010   |      2      |
+| 0011   |      3      |
+| 0100   |      4      |
+| 0101   |      5      |
+| 0110   |      6      |
+| 0111   |      7      |
+| 1000   |      8      |
+| 1001   |      9      |
+| 1010   |      A      |
+| 1011   |      B      |
+| 1100   |      C      |
+| 1101   |      D      |
+| 1110   |      E      |
+| 1111   |      F      |
+
+ 
+![Ascii Table](assets/images/ascii_table.png)
+(Figure x. ASCII Table)
 
 ## Simulation
 - Square Wave simulation showcase 
+- How to look at the waveforms
 
 # Instructions
 
@@ -86,7 +117,7 @@ UART Waveform
 
 
 
-# (Optional:)
+# (Optional)
 
 ## Generating the Waveforms
 - Using RTL language and simulation 
@@ -96,10 +127,12 @@ UART Waveform
 A square wave is never just a square wave, in a real world, the square wave will slew due to many factors. 
 
 ![Square wave Slewing](assets/images/square_wave_slewed.png)
+(Figure x. Square Wave Slewing)
 
 [Click Here for more information about non ideal conditions](assets/Non_Ideal_Conditions.md)
 
 <img src="assets/images/sinewave_to_squarewave.jpg" width="1200" height="700">
+(Figure x. Sine wave to Square Wave)
 
 ## Alternative Waveform Viewer: GTKWave
 - see: https://gtkwave.sourceforge.net
