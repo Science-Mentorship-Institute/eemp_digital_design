@@ -4,7 +4,7 @@
 <p style="text-align:center;">Welcome to the EEMP Digital Design Laboratory!</p>
 
 # Background
-All the electronics around you can be decomposed to binary, ones and zeros. For example, the very device that you are using to look at this page is being translated to ones and zeros for your display to show. 
+All the electronics around you can be decomposed to binary, ones and zeros. For example, the very device that you are using to look at this page is being translated to ones and zeros for your display controller (HDMI) to show. 
 
 Examples: 
 - Controllers
@@ -20,7 +20,8 @@ In this lab, you will look at various signals and get a feel of how looking at s
 ![Square Wave](assets/images/square_wave.png)
 (Figure x. Square Wave)
 
-A **signal** is a square wave function that represents binary values of a high (1) and low value (0). Square waves have characteristics such as frequency and duty cycle. Frequency (Hz) is defined as how often the wave repeats itself per second. Duty cycle is the ratio between how long the signal stays high versus low. 
+A **signal** is a square wave function that represents binary values of a high (1) and low value (0). Square waves have characteristics such as frequency and duty cycle. Frequency (Hz) is defined as how often the wave repeats itself per second. Knowing the frequency is important since it is used in sequential logic and determines how fast the digital design can run. 
+Duty cycle is the ratio between how long the signal stays high versus low. Duty cycle is important in applications like turning a wheel as controlliI needng the duty cycle controls how fast or slow the wheel would move. 
 Square waves can be generated through various means such as natural crystals, analog circuit components, and even digital design itself. 
 
 
@@ -31,7 +32,7 @@ Square waves can be generated through various means such as natural crystals, an
 (Figure x. Combinational Logic Truth Table)
 
 Recall from the lecture about logic gates where AND, OR, NOT, XOR gates allow you to make calculations and decisions. 
-Combinational Logic is a type of signal where the output only depends on the current input values. 
+Combinational Logic is a type of signal where the output only depends on the current input values. The figures above are the truth tables to common logic gates.
 
 
 ## Sequential Logic 
@@ -42,7 +43,7 @@ Sequential Logic allow signals to have memory about past decisions. One example 
 
 ## Binary<->Hexadecimal<->ASCII Conversion
 In the context of digital design, binary is the most fundamental unit but often times converting to other units allow you to look at information more easily. 
-Converting binary to hexadecimal allows you to reduce the number of visible digits there are. Then converting hexadecimal to ASCII is as easy as looking at the **two** hexadecimal values. 
+Converting binary to hexadecimal allows you to reduce the number of visible digits there are. Then converting hexadecimal to ASCII is as easy as looking at the **two** hexadecimal values. The table below shows binary to its respective hexadecimal value. 
 
 Binary to Hexadecimal Table:
 | Binary | Hexadecimal | 
@@ -63,6 +64,9 @@ Binary to Hexadecimal Table:
 | 1101   |      D      |
 | 1110   |      E      |
 | 1111   |      F      |
+
+(Ex. Convert 0b1100_1101_0011_0001 = 0xCD31) 
+Tip: By splitting the bits into segments of 4 bits, converting it into hexadecimal is now just matching the 4 bits to its respective hexadecimal value. 
 
  
 ![Ascii Table](assets/images/ascii_table.png)
@@ -88,29 +92,44 @@ Binary to Hexadecimal Table:
             - Extract the ZIP to retrieve the files 
 
 ## Surfer Waveform Viewer Overview
-Waveform Viewer: https://app.surfer-project.org/
+Surfer Waveform Viewer Online: https://app.surfer-project.org/
+- Surfer can be installed locally. See: https://gitlab.com/surfer-project/surfer
 
-Walk through with pictures of common icons and buttons to know. 
+The figure below shows the surfer user interface. 
+
+![Surfer Waveform Viewer Overview](assets/images/surfer_overview.png)
 
 # Lab 0: Warmup
 Drawing truth tables for combinational logic on a canvas quiz.
 
 # Lab 1
+Message Translation 
 Open `lab1_message_wave.vcd` file in a waveform viewer. 
 
+Decode the message and write the code in ASCII Here: ____ 
 
 # Lab 2
 RISC Instruction Translation
 
 Open `lab2_instruction_wave.vcd` file in a waveform viewer. 
 
+Decode the RISC Instruction and write the instruction here (format: TODO): ____ 
+
 # Lab 3
 Traffic Lights 
 
 Open `lab2_traffic_light_wave.vcd` file in a waveform viewer. 
 
+Figure out the sequence that the traffic lights is on and various attributes of the traffic lights.
+How much CLK cycles does the green light stay on for? 
+How much CLK cycles does the orange light stay on for? 
+How much CLK cycles does the red light stay on for? 
+TODO.. Some more questions
+
 # Lab 4 
-UART Waveform
+Protocols and Communication
+UART Waveform and Translation
+TODO.
 
 # Lab 5
 ?? 
@@ -136,3 +155,4 @@ A square wave is never just a square wave, in a real world, the square wave will
 
 ## Alternative Waveform Viewer: GTKWave
 - see: https://gtkwave.sourceforge.net
+
