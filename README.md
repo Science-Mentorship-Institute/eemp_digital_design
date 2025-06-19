@@ -72,24 +72,33 @@ Tip: By splitting the bits into segments of 4 bits, converting it into hexadecim
 ![Ascii Table](assets/images/ascii_table.png)
 (Figure x. ASCII Table)
 
-## Simulation
+## How to look at Waveforms
 - Square Wave simulation showcase 
 - How to look at the waveforms
 
 # Instructions
 
 ## Setup
-- Download git - https://git-scm.com/downloads
-    - If you are using windows, downloading from git-scm.com will give you a program called "Git Bash" 
-    - If you are using mac, you can download via `brew install git` using homebrew and check that it has been installed 
-    `git -v`
-- Clone this repository
-    - In git bash or your respective shell, execute this command: 
-    `git clone https://github.com/Science-Mentorship-Institute/eemp_digital_design.git`
-    - Alternatively: Download the files directly
-        - Go to https://github.com/Science-Mentorship-Institute/eemp_digital_design.git
-            - Press the Green "Code" Button and then click "Download ZIP"
-            - Extract the ZIP to retrieve the files 
+- Hosted Setup:
+    - Make sure you can access https://app.surfer-project.org/
+    - Check that you can load a waveform
+        - Goto Surfer and Click on "File" on the top left and then click on "Open URL"
+        - Enter `https://raw.githubusercontent.com/Science-Mentorship-Institute/eemp_digital_design/refs/heads/su25/lab1_message_wave.vcd` and press "Load URL" to load the waveform.
+        - Make sure that under "Scopes", you can see "message_tb" 
+        - Click on the dropdown for "message_tb" and make sure that under "Variables" that you can see the various signals such as "clk", "message_out", "msg_len", and "rst"
+- Optional - Local Setup:
+    - Download git - https://git-scm.com/downloads
+        - If you are using windows, downloading from git-scm.com will give you a program called "Git Bash" 
+        - If you are using mac, you can download via `brew install git` using homebrew and check that it has been installed 
+        `git -v`
+    - Clone this repository
+        - In git bash or your respective shell, execute this command: 
+        `git clone https://github.com/Science-Mentorship-Institute/eemp_digital_design.git`
+        - Alternatively: Download the files directly
+            - Go to https://github.com/Science-Mentorship-Institute/eemp_digital_design.git
+                - Press the Green "Code" Button and then click "Download ZIP"
+                - Extract the ZIP to retrieve the files 
+        - Note: This is only required if loading files from URL doesn't work
 
 ## Surfer Waveform Viewer Overview
 Surfer Waveform Viewer Online: https://app.surfer-project.org/
@@ -99,40 +108,71 @@ The figure below shows the surfer user interface.
 
 ![Surfer Waveform Viewer Overview](assets/images/surfer_overview.png)
 
+- Note: You can load the waveforms from URL
+
 # Lab 0: Warmup
-Drawing truth tables for combinational logic on a canvas quiz.
+Drawing truth tables for combinational logic.
 
-# Lab 1
-Message Translation 
-Open `lab1_message_wave.vcd` file in a waveform viewer. 
+# Lab 1: Message Translation 
+Load the URL: `https://raw.githubusercontent.com/Science-Mentorship-Institute/eemp_digital_design/refs/heads/su25/lab1_message_wave.vcd` or Open `lab1_message_wave.vcd` file in a waveform viewer. 
 
-Decode the message and write the code in ASCII Here: ____ 
+Decode the message and write the message in ASCII Here: ____ 
 
-# Lab 2
-RISC Instruction Translation
+# Lab 2: RISC_V Instruction Translation
 
-Open `lab2_instruction_wave.vcd` file in a waveform viewer. 
+**RISC-V Registers**
+![RISC-V Registers](assets/images/risc_v_registers.png)
 
-Decode the RISC Instruction and write the instruction here (format: TODO): ____ 
+**RISC-V Types**
+![RISC-V Types](assets/images/risc_v_types.png)
 
-# Lab 3
-Traffic Lights 
+**RISC-V Instructions**
+| Instruction       | Name          | Description                                   | Type      | Opcode    | Funct3    | Funct7    | Other     |
+| --------          | -------       | --------                                      | -------   | --------  | -------   | -------   | -------   |
+| add rd, rs1, rs2  | ADD      | rd = rs1 + rs2                                     | R         | 011 0011  | 000       | 000000    | -------   |
+| addi rd, rs1, rs2 | ADD Immediate | R[rd] = R[rs1] + imm                          | I         | 001 0011  | 000       | -------   | -------   |
+| li rd imm           | Load Immediate | R[rd] = imm                                | I         | 001 0011  | 000       | -------   | -------   |
+| lb rd imm(rs1)    | Load Byte     | R[rd] = M[R[rs1] + imm][7:0] (Sign-extend)    | I         | 000 0011  | 000       |  -------  | -------   |
+| sb rs2 imm(rs1)   | Store Byte    | M[R[rs1] + imm][15:0] = R[rs2][15:0]          | S         | 010 0011  | 010       | -------   | -------   |
 
-Open `lab2_traffic_light_wave.vcd` file in a waveform viewer. 
+Note: For a comprehensive list of RISC_V Instructions See: [List of RISC_V Instructions](assets/images/risc_v_instructions_specs.pdf).  
 
-Figure out the sequence that the traffic lights is on and various attributes of the traffic lights.
-How much CLK cycles does the green light stay on for? 
-How much CLK cycles does the orange light stay on for? 
-How much CLK cycles does the red light stay on for? 
-TODO.. Some more questions
 
-# Lab 4 
-Protocols and Communication
-UART Waveform and Translation
-TODO.
+Load the URL: `https://raw.githubusercontent.com/Science-Mentorship-Institute/eemp_digital_design/refs/heads/su25/lab2_instruction_wave.vcd` or Open `lab2_instruction_wave.vcd` file in a waveform viewer. 
 
-# Lab 5
-?? 
+Decode the RISC_V Instruction by looking at the and write the instruction here:
+1. 
+2. 
+3. 
+4. 
+5. 
+6.
+7.
+8.
+9.
+10.
+11.
+12.
+13. 
+14. 
+15.
+
+Optional: Can you translate or "guess" and write (pseudocode) this program? 
+
+# Lab 3: Traffic Lights 
+
+Load the URL: `https://raw.githubusercontent.com/Science-Mentorship-Institute/eemp_digital_design/refs/heads/su25/lab3_traffic_light_wave.vcd` or Open `lab2_traffic_light_wave.vcd` file in a waveform viewer. 
+
+Figure out the sequence that the traffic lights is on and answer questions on various attributes of the traffic lights.
+1. How much CLK cycles does the green light stay on for? 
+2. How much CLK cycles does the orange light stay on for? 
+3. How much CLK cycles does the red light stay on for? 
+4. What is the initial state? 
+5. What color stays on for the longest amount of time? 
+6. Optional: Do the signals get evaluated during posedge or negedge? 
+
+# Lab 4: Protocols and Communication
+I2C Waveform and Translation. Packets
 
 
 
