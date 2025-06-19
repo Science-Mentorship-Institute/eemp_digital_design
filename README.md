@@ -172,8 +172,9 @@ Figure out the sequence that the traffic lights is on and answer questions on va
 6. Optional: Do the signals get evaluated during posedge or negedge? 
 
 # Lab 4: Protocols and Communication
-I2C Waveform and Translation. Packets
+I2C Waveform and Translation. 
 
+Load the URL: `temp.com` or Open `lab3_i2c_wave.vcd` file in a waveform viewer. 
 
 
 # (Optional)
