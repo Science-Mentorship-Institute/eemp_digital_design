@@ -176,4 +176,3 @@ Figure out the sequence that the traffic lights is on and answer questions on va
 
 ## Alternative Waveform Viewer: GTKWave
 - see: https://gtkwave.sourceforge.net
-
