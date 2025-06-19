@@ -169,30 +169,10 @@ Figure out the sequence that the traffic lights is on and answer questions on va
 3. How much CLK cycles does the red light stay on for? 
 4. What is the initial state? 
 5. What color stays on for the longest amount of time? 
-6. Optional: Do the signals get evaluated during posedge or negedge? 
-
-# Lab 4: Protocols and Communication
-I2C Waveform and Translation. 
-
-Load the URL: `temp.com` or Open `lab3_i2c_wave.vcd` file in a waveform viewer. 
+6. Optional: Do the signals get evaluated during posedge or negedge? *hint: look at when the signals transition from HIGH/LOW*
 
 
 # (Optional)
-
-## Generating the Waveforms
-- Using RTL language and simulation 
-[Click Here for more information about generating waveforms.](assets/Generating_Wave_Forms.md)
-
-## Non-Ideal Conditions
-A square wave is never just a square wave, in a real world, the square wave will slew due to many factors. 
-
-![Square wave Slewing](assets/images/square_wave_slewed.png)
-(Figure x. Square Wave Slewing)
-
-[Click Here for more information about non ideal conditions](assets/Non_Ideal_Conditions.md)
-
-<img src="assets/images/sinewave_to_squarewave.jpg" width="1200" height="700">
-(Figure x. Sine wave to Square Wave)
 
 ## Alternative Waveform Viewer: GTKWave
 - see: https://gtkwave.sourceforge.net
