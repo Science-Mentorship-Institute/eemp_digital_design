@@ -78,7 +78,7 @@ Tip: By splitting the bits into segments of 4 bits, converting it into hexadecim
 
 # Instructions
 
-## Setup
+## Pre Lab
 - Hosted Setup:
     - Make sure you can access https://app.surfer-project.org/
     - Check that you can load a waveform
