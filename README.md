@@ -78,7 +78,7 @@ Tip: By splitting the bits into segments of 4 bits, converting it into hexadecim
 
 # Instructions
 
-## Setup
+## Pre Lab
 - Hosted Setup:
     - Make sure you can access https://app.surfer-project.org/
     - Check that you can load a waveform
@@ -141,6 +141,7 @@ Note: For a comprehensive list of RISC_V Instructions See: [List of RISC_V Instr
 Load the URL: `https://raw.githubusercontent.com/Science-Mentorship-Institute/eemp_digital_design/refs/heads/su25/lab2_instruction_wave.vcd` or Open `lab2_instruction_wave.vcd` file in a waveform viewer. 
 
 Decode the RISC_V Instruction by looking at the and write the instruction here:
+
 1. 
 2. 
 3. 
@@ -156,6 +157,7 @@ Decode the RISC_V Instruction by looking at the and write the instruction here:
 13. 
 14. 
 15.
+16.
 
 Optional: Can you translate or "guess" and write (pseudocode) this program? 
 
