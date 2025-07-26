@@ -42,7 +42,7 @@ Using a clock source and transistor, you can start creating logic gates and comb
 (Figure 1. Square Wave)
 
 A **signal** is a square wave function that represents binary values of a high (1) and low value (0). Square waves have characteristics such as frequency and duty cycle. Frequency (Hz) is defined as how often the wave repeats itself per second. Knowing the frequency is important since it is used in sequential logic and determines how fast the digital design can run. 
-**Duty cycle** is the ratio between how long the signal stays high versus low. Duty cycle is important in applications like turning a wheel as controlliI needng the duty cycle controls how fast or slow the wheel would move. 
+**Duty cycle** is the ratio between how long the signal stays high versus low. Duty cycle is important in applications like turning a wheel and the duty cycle controls how fast or slow the wheel would move. 
 **Square waves** can be generated through various means such as natural crystals and analog circuit components. 
 
 
